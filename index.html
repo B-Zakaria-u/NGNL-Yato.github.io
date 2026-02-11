@@ -43,10 +43,16 @@
 
     <nav class="navbar">
         <a href="#home" class="logo scramble-text">B.Z.</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="nav-links">
             <li><a href="#about" class="scramble-hover">PROFILE</a></li>
             <li><a href="#skills" class="scramble-hover">SYSTEMS</a></li>
             <li><a href="#projects" class="scramble-hover">DEPLOYMENTS</a></li>
+            <li><a href="#cv" class="scramble-hover">RESUME</a></li>
             <li><a href="#contact" class="scramble-hover">CONNECT</a></li>
         </ul>
     </nav>
@@ -56,6 +62,13 @@
         <!-- Hero -->
         <section id="home" class="section hero">
             <div class="container hero-wrapper">
+                <!-- Floating Profile Picture -->
+                <div class="profile-float">
+                    <div class="profile-frame">
+                        <img src="Personal Picture.png" alt="Zakaria Bozari - Profile Picture">
+                    </div>
+                </div>
+
                 <div class="hero-content">
                     <div class="status-bar">
                         <span class="status-dot"></span> SYSTEM ONLINE
@@ -265,6 +278,48 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Download Section -->
+        <section id="cv" class="section cv-section">
+            <div class="container">
+                <h2 class="section-title scramble-text">RESUME_DOWNLOAD</h2>
+                <div class="cv-download-wrapper">
+                    <div class="cyber-card cv-card">
+                        <div class="card-header">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>CURRICULUM VITAE</span>
+                        </div>
+                        <div class="cv-content">
+                            <p class="cv-description">
+                                Download my complete professional profile including detailed experience,
+                                technical expertise, and academic achievements.
+                            </p>
+                            <div class="cv-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">FORMAT:</span>
+                                    <span class="stat-value">PDF</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">SIZE:</span>
+                                    <span class="stat-value">~580KB</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">UPDATED:</span>
+                                    <span class="stat-value">FEB 2026</span>
+                                </div>
+                            </div>
+                            <a href="Bozari Zakaria Cv.pdf" download="Bozari_Zakaria_CV.pdf"
+                                class="cyber-btn cv-download-btn">
+                                <span class="cyber-btn__text">
+                                    <i class="fas fa-download"></i> DOWNLOAD_CV
+                                </span>
+                                <span class="cyber-btn__glitch"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

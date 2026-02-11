@@ -213,3 +213,31 @@ document.querySelectorAll('a, button').forEach(el => {
         cursorRing.style.borderColor = '#00f2ff'; // Cyan default
     });
 });
+
+// --- 4. MOBILE MENU TOGGLE ---
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileMenu) {
+    // Toggle menu on hamburger click
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !mobileMenu.contains(e.target)) {
+            navLinks.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        }
+    });
+}
